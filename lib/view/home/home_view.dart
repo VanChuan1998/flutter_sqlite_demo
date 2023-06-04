@@ -371,17 +371,13 @@ class _HomeViewState extends State<HomeView> {
                         EdgeInsets.symmetric(horizontal: 10, vertical: 10)),
               ),
               const SizedBox(height: 5),
-              state.isAddAddressSuccess
-                  ? const Text('Địa chỉ')
-                  : const SizedBox(),
-              state.isAddAddressSuccess
-                  ? TextFormField(
-                      controller: addressController,
-                      decoration: const InputDecoration(
-                          contentPadding: EdgeInsets.symmetric(
-                              horizontal: 10, vertical: 10)),
-                    )
-                  : const SizedBox(),
+              // const Text('Địa chỉ'),
+              // TextFormField(
+              //         controller: addressController,
+              //         decoration: const InputDecoration(
+              //             contentPadding: EdgeInsets.symmetric(
+              //                 horizontal: 10, vertical: 10)),
+              //       ),
               const SizedBox(height: 5),
               ElevatedButton(
                   onPressed: () {
@@ -444,9 +440,7 @@ class _HomeViewState extends State<HomeView> {
                   children: [
                     Text('ID: ${state.person?.id}    ${state.person?.name}'),
                     Text('Age: ${state.person?.age}'),
-                    state.isAddAddressSuccess
-                        ? Text('Address: ${state.person?.address}')
-                        : const SizedBox(),
+                    // Text('Address: ${state.person?.address}'),
                   ],
                 ),
                 actions: <Widget>[
@@ -598,9 +592,7 @@ class _HomeViewState extends State<HomeView> {
                   subtitle: Column(
                     children: [
                       Text('Age: ${person.age ?? ''}'),
-                      state.isAddAddressSuccess
-                          ? Text('Address: ${person.address ?? ''}')
-                          : const SizedBox(),
+                      // Text('Address: ${person.address ?? ''}'),
                     ],
                   ),
                   leading: IconButton(
@@ -633,19 +625,15 @@ class _HomeViewState extends State<HomeView> {
                                             horizontal: 10, vertical: 10)),
                                   ),
                                   const SizedBox(height: 5),
-                                  state.isAddAddressSuccess
-                                      ? const Text('Địa chỉ')
-                                      : const SizedBox(),
-                                  state.isAddAddressSuccess
-                                      ? TextFormField(
-                                          controller: ageController,
-                                          decoration: const InputDecoration(
-                                              contentPadding:
-                                                  EdgeInsets.symmetric(
-                                                      horizontal: 10,
-                                                      vertical: 10)),
-                                        )
-                                      : const SizedBox(),
+                                  // const Text('Địa chỉ'),
+                                  // TextFormField(
+                                  //         controller: ageController,
+                                  //         decoration: const InputDecoration(
+                                  //             contentPadding:
+                                  //                 EdgeInsets.symmetric(
+                                  //                     horizontal: 10,
+                                  //                     vertical: 10)),
+                                  //       ),
                                 ],
                               ),
                             ),
